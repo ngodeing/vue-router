@@ -10,17 +10,17 @@ const routes = [
   {
     path: '/skill',
     name: 'skill',
-    component: () => import(/* webpackChunkName: "about" */ '../views/SkillView.vue')
+    component: () => import('../views/SkillView.vue')
   },
   {
     path: '/education',
     name: 'education',
-    component: () => import(/* webpackChunkName: "about" */ '../views/EducationView.vue')
+    component: () => import('../views/EducationView.vue')
   },
   {
     path: '/experience',
     name: 'experience',
-    component: () => import(/* webpackChunkName: "about" */ '../views/ExperienceView.vue')
+    component: () => import('../views/ExperienceView.vue')
   }
 ]
 

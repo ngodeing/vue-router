@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <div :class="slideNext" @click="changeSlide()"><h2>→</h2></div>
-        <div :class="slideNone" @click="changeSlide2()"><h2>←</h2></div>
+        <button :class="slideNext" @click="changeSlide()">→</button>
+        <button :class="slideNone" @click="changeSlide2()">→</button>
         <div :class="slide1">
             <div class="circleutama">
                 <div class="circle">
@@ -145,7 +145,6 @@ export default {
       slide1:"cards1",
       slide2:"cards2",
       slideNext:"slide",
-      slidePrev:"slideP",
       slideNone:"slideN"
     }
   }, methods:{
@@ -153,7 +152,7 @@ export default {
         this.slide1 ="cards2";
         this.slide2 ="cards1";
         this.slideNext = "slideN"
-        this.slideNone = "slideP"
+        this.slideNone = "slide"
     },
     changeSlide2(){
         this.slide2 ="cards2";
@@ -177,49 +176,41 @@ export default {
     width: 50px;
     background-color: #07806A;
     position: absolute;
-    margin: -20px 0px 0px 1200px;
+    margin: -20px 0px 0px 1195px;
     border-radius: 0px 20px 0px 0px;
     color: white;
     min-height: 50px;
+    border-style: none;
     cursor: pointer;
 }
-.slideP{
-    width: 50px;
-    background-color: #07806A;
-    position: absolute;
-    margin: -20px 0px 0px 0px;
-    border-radius: 20px 0px 0px 0px;
-    color: white;
-    min-height: 50px;
-    cursor: pointer;
-}
+
 .slideN{
     display: none;
 }
 
 .cards1{
     text-align: left;
-    width: 500px;
+    width: 600px;
     display: inline-block;
-    margin: 0px 0px 20px 40px;
+    margin: 0px 0px 20px 20px;
     color: white;
 }
 .cards1 .circleutama{
     background-color: #72D7C4;
     margin-right: 100px;
     float: left;
-    width: 80px;
+    width: 60px;
     border-radius: 50%;
-    height: 150px;
+    height: 120px;
 }
 .cards1 .circleutama .circle{
     background-color: #07806A;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 .cards1 .circleutama .circle img{
-    width: 165px;
+    width: 115px;
     border-radius: 50%;
 }
 .cards2 {

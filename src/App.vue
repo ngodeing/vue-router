@@ -49,9 +49,11 @@ nav a {
   margin-right: 30px;
   padding: 20px;
   text-decoration: none;
+  border-bottom: solid white;
 }
 
 nav a.router-link-exact-active {
   border-bottom: solid #07806A;
+  transition: 0.5s;
 }
 </style>

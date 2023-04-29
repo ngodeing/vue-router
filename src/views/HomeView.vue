@@ -99,6 +99,12 @@ export default {
     margin: 30px 0px 0px 0px;
     text-align: justify;
 }
+@media only screen and (max-width: 1300px) {
+    .card{
+        float: left;
+        margin-left: 30px;
+    }
+}
 
 @media only screen and (max-width: 768px) {
   .title{

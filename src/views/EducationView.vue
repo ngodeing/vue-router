@@ -41,12 +41,12 @@ export default {
 .containerEdu{
     width: 1200px;
     margin: 30px auto;
-    padding: 0px 0px;
 }
 .containerEdu h1{
     text-align: left;
     font-size: 50pt;
     color: #07806A;
+    margin-left: 30px;
 }
 .cardEdu{
     width: 500px;
@@ -66,5 +66,23 @@ export default {
 }
 .clear{
     clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerEdu {
+        width: 90%;
+        font-size: 80%;
+    }
+    .containerEdu h1{
+        text-align: center;
+        font-size: 40pt;
+    }
+    .cardEdu {
+        margin: 20px 0px 0px 0px;
+        width: 90%;
+    }
+    .cardEdu img{
+        margin-top: 20px;
+    }
 }
 </style>

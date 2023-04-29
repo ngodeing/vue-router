@@ -40,7 +40,7 @@ nav img {
 
 nav {
   padding: 30px;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 nav a {
@@ -55,5 +55,20 @@ nav a {
 nav a.router-link-exact-active {
   border-bottom: solid #07806A;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+  nav{
+    margin-top: -20px;
+  }
+  nav img{
+    width: 50px;
+    margin-top: -15px;
+  }
+  nav a{
+    margin: 0px 5px 0px 0px;
+    padding: 15px;
+    font-size: 10pt;
+  }
 }
 </style>

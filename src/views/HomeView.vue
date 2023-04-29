@@ -68,7 +68,6 @@ export default {
     width: 500px;
     border-radius: 20px;
     color: white;
-    padding: 15px;
     float: right;
     padding: 30px;
     margin: 50px 20px 0px 0px;
@@ -101,4 +100,37 @@ export default {
     text-align: justify;
 }
 
+@media only screen and (max-width: 768px) {
+  .title{
+    float: none;
+    margin: 30px auto;
+  }
+  .title h1{
+    text-align: center;
+    font-size: 35pt;
+  }
+  .title button{
+    float: none;
+    margin: 20px auto;
+    font-size: 10pt;
+  }
+  #rangka{
+    margin-left: 20px;
+  }
+  .card{
+    background-color: #07AE90;
+    width: 80%;
+  }
+  .card .circleutama {
+    float: none;
+    margin: 0px auto;
+    background-color: transparent;
+    padding-right: 50px;
+  }
+  .card h1{
+    float: none;
+    margin: 30px auto;
+  }
+
+}
 </style>

@@ -39,13 +39,14 @@
     </script>
     <style>
     .containerExp{
-        width: 1200px;
+        width: 95%;
         margin: 30px auto;
         padding: 0px 0px;
     }
     .containerExp h1{
         text-align: left;
         font-size: 50pt;
+        margin-left: 30px;
         color: #07806A;
     }
     .cardExp{
@@ -67,4 +68,22 @@
     .clear{
         clear: both;
     }
+
+    @media only screen and (max-width: 768px) {
+    .containerExp {
+        width: 90%;
+        font-size: 80%;
+    }
+    .containerExp h1{
+        text-align: center;
+        font-size: 40pt;
+    }
+    .cardExp {
+        margin: 20px 0px 0px 0px;
+        width: 90%;
+    }
+    .cardExp img{
+        margin-top: 20px;
+    }
+}
     </style>

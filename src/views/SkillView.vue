@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <button :class="slideNext" @click="changeSlide()">→</button>
-        <button :class="slideNone" @click="changeSlide2()">→</button>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="html" alt="logo html">
@@ -11,7 +9,7 @@
             <h2>HTML</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="css" alt="logo css">
@@ -20,7 +18,7 @@
             <h2>CSS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="js" alt="logo javascript">
@@ -29,7 +27,7 @@
             <h2>JAVASCRIPT</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="sass" alt="logo sass">
@@ -38,7 +36,7 @@
             <h2>SASS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="bootstrap" alt="logo bootstrap">
@@ -47,7 +45,7 @@
             <h2>BOOTSTRAP</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide1">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="vue" alt="logo vue">
@@ -56,7 +54,7 @@
             <h2>VUE JS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="tailwind" alt="logo tailwind">
@@ -65,7 +63,7 @@
             <h2>TAILWIND</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="nextjs" alt="logo nextjs">
@@ -74,7 +72,7 @@
             <h2>NEXT JS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="nodejs" alt="logo Node JS">
@@ -83,7 +81,7 @@
             <h2>NODE JS</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="github" alt="logo github">
@@ -92,7 +90,7 @@
             <h2>GITHUB</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="gitlab" alt="logo gitlab">
@@ -101,7 +99,7 @@
             <h2>GITLAB</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolores ea adipisci assumenda maiores consequuntur dignissimos hic itaque consequatur expedita.</p>
         </div>
-        <div :class="slide2">
+        <div class="cards1">
             <div class="circleutama">
                 <div class="circle">
                     <img :src="figma" alt="logo figma">
@@ -143,22 +141,6 @@ export default {
       gitlab: gitlab1,
       figma: figma1,
       slide1:"cards1",
-      slide2:"cards2",
-      slideNext:"slide",
-      slideNone:"slideN"
-    }
-  }, methods:{
-    changeSlide(){
-        this.slide1 ="cards2";
-        this.slide2 ="cards1";
-        this.slideNext = "slideN"
-        this.slideNone = "slide"
-    },
-    changeSlide2(){
-        this.slide2 ="cards2";
-        this.slide1 ="cards1";
-        this.slideNone = "slideN";
-        this.slideNext = "slide";
     }
   }
 }
@@ -166,26 +148,11 @@ export default {
 <style>
 .container{
     background-color: #07AE90;
-    width: 1250px;
-    height: 500px;
+    width: 95%;
+    height: auto;
     border-radius: 20px;
     margin: 30px auto;
     padding: 20px 0px;
-}
-.slide{
-    width: 50px;
-    background-color: #07806A;
-    position: absolute;
-    margin: -20px 0px 0px 1195px;
-    border-radius: 0px 20px 0px 0px;
-    color: white;
-    min-height: 50px;
-    border-style: none;
-    cursor: pointer;
-}
-
-.slideN{
-    display: none;
 }
 
 .cards1{
@@ -206,7 +173,6 @@ export default {
 .cards1 .circleutama .circle{
     background-color: #07806A;
     width: 120px;
-    height: 120px;
     border-radius: 50%;
 }
 .cards1 .circleutama .circle img{
@@ -218,5 +184,29 @@ export default {
 }
 .clear{
     clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 97%;
+        height: auto;
+    }
+    .cards1 {
+        width: 100%;
+    }
+    .cards1 .circleutama{
+        margin:20px 80px 0px 0px;
+        height: 105px;
+    }
+    .cards1 p{
+        font-size: 10pt;
+        width: 90%;
+    }
+    .cards1 .circleutama .circle{
+    width: 100px;
+    }
+    .cards1 .circleutama .circle img{
+    width: 100px;
+    }
 }
 </style>

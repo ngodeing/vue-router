@@ -6,14 +6,10 @@
           <button id="rangka">Projects</button>
   </div>
   <div class="card">
-        <div class="circleutama">
-            <div class="circle">
-                <img :src="taufik" alt="profile taufik">
-            </div>
-        </div>
+        <img :src="taufik" alt="profile taufik">
         <h1>Taufik Nurrohman</h1>
         <div class="clear"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, optio. Ea eaque consequuntur debitis id soluta corrupti, reprehenderit inventore laudantium doloremque aperiam? Molestias nulla velit porro consequatur quia eligendi aut consectetur et facere alias tempora perferendis amet impedit suscipit culpa recusandae consequuntur optio nesciunt eius, commodi ipsa. Repellendus voluptatum, minima nisi ipsa, atque consequatur ipsum doloremque assumenda autem ratione cum odio dolore illum blanditiis? Dignissimos odio quibusdam harum laboriosam aut necessitatibus pariatur totam, error accusantium excepturi magnam perspiciatis inventore optio tenetur id consectetur perferendis vero tempora ipsa unde adipisci vitae, animi officia laudantium. Quaerat quod aut consectetur quibusdam iusto ipsa.</p>
+        <p>I am an experienced front-end developer with skills in HTML, CSS, and JavaScript. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.<br><br>I have expertise in developing websites using frameworks such as VueJS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
     </div>
 </template>
 
@@ -28,114 +24,110 @@ export default {
 }
 </script>
 <style>
+
 .title{
-    background-color: rgb(255, 255, 255);
     float: left;
     width: 450px;
-    margin: 150px 0px 0px 100px;
+    margin: 100px 0px 0px 100px;
+    font-family: poppins;
 }
 .title h1{
-    margin: 0px;
-    font-size: 50pt;
+    font-size: 45pt;
     text-align: left;
+    line-height: 1.0;
+    line-height: 1.2;
 }
 #name{
-    color: #07806A;
+    color: #112B3C;
 }
 #job{
-    color: #07AE90;
+    color: #F66B0E;
+    margin-top: -40px;
 }
 .title button{
     float: left;
     cursor: pointer;
     border-style: none;
-    background-color: #07806A;
+    background-color: #112B3C;
     border-radius: 3px;
-    color: white;
+    color: #EFEFEF;
     font-size: 15pt;
-    margin: 30px 30px 0px 0px;
+    margin: 5px 20px 0px 0px;
     padding: 10px 30px;
+    font-family: poppins;
 }
 #rangka{
     border-style: solid;
-    border-color: #07806A;
+    border-color: #112B3C;
     background-color: transparent;
-    color: #07806A;
+    color: #F66B0E;
 }
 /* CARD */
 .card{
-    background-color: #07AE90;
-    width: 500px;
+    background-color: #112B3C;
+    width: 40%;
     border-radius: 20px;
-    color: white;
+    font-size: 90%;
+    color: #EFEFEF;
     float: right;
     padding: 30px;
     margin: 50px 20px 0px 0px;
 }
-.card .circleutama{
-    background-color: #72D7C4;
+.card img{
     float: left;
-    width: 80px;
-    border-radius: 50%;
-    height: 150px;
-}
-.card .circleutama .circle{
-    background-color: #07806A;
+    background-color: #205375;
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-.card .circleutama .circle img{
-    width: 150px;
-    margin: 0px 0px 0px 0px;
     border-radius: 50%;
 }
 .card h1 {
     font-size: 20pt;
-    margin: 55px 0px 0px 85px;
+    margin: 55px 0px 0px 30px;
     float: left;
 }
 .card p{
     margin: 30px 0px 0px 0px;
     text-align: justify;
 }
-@media only screen and (max-width: 1300px) {
-    .card{
-        float: left;
-        margin-left: 30px;
-    }
-}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1100px)  {
   .title{
     float: none;
-    margin: 30px auto;
+    width: 80%;
+    margin: 50px auto;
+    transition: 0.5s;
+    
   }
   .title h1{
     text-align: center;
     font-size: 35pt;
   }
+  #name{
+    margin-bottom: 40px;
+  }
   .title button{
     float: none;
-    margin: 20px auto;
+    margin: 0px auto;
+    padding: 8px 20px;
     font-size: 10pt;
   }
   #rangka{
     margin-left: 20px;
   }
   .card{
-    background-color: #07AE90;
-    width: 80%;
-  }
-  .card .circleutama {
     float: none;
-    margin: 0px auto;
-    background-color: transparent;
-    padding-right: 50px;
+    width: 80%;
+    margin: 30px auto;
+    transition: 0.5s;
+    font-size: 10pt;
+  }
+  .card img{
+    float: none;
+    width: 120px;
   }
   .card h1{
     float: none;
     margin: 30px auto;
+    font-size: 20pt;
   }
 
 }

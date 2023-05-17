@@ -20,19 +20,28 @@ export default {
 }
 </script>
 <style>
+@font-face {
+    font-family: poppins;
+    src: url(./assets/poppins.ttf);
+}
+body {
+    background-color: #EFEFEF;
+    color: #EFEFEF;
+    font-family: poppins;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: poppins, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: rgb(255, 255, 255);
+  background-color: #EFEFEF;
 }
 nav img {
   float: left;
-  width: 80px;
+  width: 50px;
   /* background-color: blue; */
-  margin: -30px 0px 0px -40px;
+  margin: -15px 0px 0px -30px;
 }
 .clear{
   clear: both;
@@ -45,30 +54,30 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #282828;
   margin-right: 30px;
   padding: 20px;
   text-decoration: none;
-  border-bottom: solid white;
 }
 
 nav a.router-link-exact-active {
-  border-bottom: solid #07806A;
-  transition: 0.5s;
+  border-bottom: solid #001253;
 }
 
 @media only screen and (max-width: 768px) {
   nav{
-    margin-top: -20px;
+    margin: -25px auto;
+    
   }
   nav img{
-    width: 50px;
-    margin-top: -15px;
+    width: 40px;
+    margin-top: -10px;
+    display: none;
   }
   nav a{
-    margin: 0px 5px 0px 0px;
+    margin: 0px;
     padding: 15px;
-    font-size: 10pt;
+    font-size: 8pt;
   }
 }
 </style>

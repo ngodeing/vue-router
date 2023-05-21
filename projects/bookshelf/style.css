@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    background-color: rgb(117, 117, 117);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    color: rgb(229, 229, 229);
+    text-align: center;
+    background-color: rgb(112, 161, 161);
+    padding: 15px;
+    margin-top: 0px;
+}
+h2{
+    background-color: rgb(227, 227, 227);
+    padding: 20px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 15px 15px 0px 0px;
+}
+label{
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+input{
+    border-style: none;
+    width: 90%;
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+    padding: 7px;
+    margin: 7px 0px 5px 0px;
+}
+.edit input{
+    width: 40%;
+}
+#bacaBuku{
+    width: 10%;
+}
+button{
+    background-color: rgb(43, 43, 43);
+    color: rgb(228, 228, 228);
+    border-style: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 7px 0px 5px 0px;
+}
+.input{
+    background-color: rgb(112, 161, 161);
+    padding: 20px;
+    margin: 0px 10px;
+    width: 28%;
+    border-radius: 15px;
+    float: left;
+}
+.rak{
+    background-color: rgb(159, 167, 195);
+    padding: 20px;
+    margin: 0px 10px;
+    width: 28%;
+    border-radius: 15px;
+    float: left;
+}
+pre{
+    background-color: rgb(86, 86, 113);
+    color: rgb(233, 233, 233);
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+}
+.edit{
+    background-color: rgb(135, 192, 135);
+    padding: 20px;
+    margin: 0px 10px;
+    width: 28%;
+    border-radius: 15px;
+    float: left;
+}
+
+
+@media screen and (max-width: 1300px){
+    .input,.edit,.rak{
+        float: none;
+        width: 85%;
+        margin: 10px auto;
+    }
+    input{
+        width: 80%;
+    }
+    body{
+        font-size: 80%;
+    }
+}

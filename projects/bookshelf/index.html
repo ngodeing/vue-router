@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Taufik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bookshelf Apps</h1>
+    <div class="input">
+        <form>
+            <h2>Masukkan Buku</h2>
+            <label for="judulBuku">Judul Buku</label>
+            <input type="text" id="judulBuku" required>
+            <label for="penulisBuku">Penulis</label>
+            <input type="text" id="penulisBuku" required>
+            <label for="tahunBuku">Tahun</label>
+            <input type="number" value=2022 id="tahunBuku" required>
+            <label for="bacaBuku">Selesai Baca?</label>
+            <input type="checkbox" id="bacaBuku">
+            <button type="submit" id="kirim">Masukkan ke RAK</button>
+        </form>
+    </div>
+    <div class="edit">
+        <form>
+            <h2>Edit Rak</h2>
+            <label for="hapus">Hapus Buku di Rak 1</label>
+            <input type="number" id="hapus" placeholder="Buku No berapa">
+            <button type="submit" id="hapuskan">Hapus</button>
+            <button type="submit" id="hapuskanSemua">Hapus Semua</button>
+            <label for="hapus2">Hapus Buku di Rak 2</label>
+            <input type="number" id="hapus2" placeholder="Buku No Berapa">
+            <button type="submit" id="hapuskan2">Hapus</button>
+            <button type="submit" id="hapuskanSemua2">Hapus Semua</button>
+            <label for="pindah">Pindah Buku dari Rak 1</label>
+            <input type="number" id="pindah" placeholder="Buku No Berapa">
+            <button type="submit" id="pindahkan">Pindah</button>
+            <button type="submit" id="pindahkanSemua">Pindahkan Semua</button>
+            <label for="pindah2">Pindah Buku dari Rak 2</label>
+            <input type="number" id="pindah2" placeholder="Buku No Berapa">
+            <button type="submit" id="pindahkan2">Pindah</button>
+            <button type="submit" id="pindahkanSemua2">Pindahkan Semua</button>
+        </form>
+    </div>
+    <div class="rak">
+        <h2>Rak Buku</h2>
+        <h3>Selesai dibaca: Rak 1</h3>
+        <p>
+            <pre id="sudah"></pre>
+        </p>
+        <h3>Belum Selesai Dibaca: Rak 2</h3>
+        <p>
+            <pre id="belom"></pre>
+        </p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

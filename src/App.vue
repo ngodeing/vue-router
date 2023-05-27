@@ -10,6 +10,14 @@
   <router-view/>
 </template>
 <script>
+const body = document.body
+const app = document.querySelector('#app')
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    body.classList.add("dark")
+    app.style.backgroundColor = "#222"
+}
+
 import logo1 from './assets/iconTransparan.png'; 
 export default {
   data(){
@@ -79,5 +87,9 @@ nav a.router-link-exact-active {
     padding: 15px;
     font-size: 8pt;
   }
+}
+.dark{
+  background-color: #222;
+  color: #EFEFEF;
 }
 </style>

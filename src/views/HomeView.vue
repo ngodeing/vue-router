@@ -3,7 +3,7 @@
           <h1 id="name">Hi I'm Taufik</h1>
           <h1 id="job">Front End<br>Developer</h1>
           <button onclick="location.href = 'mailto:onlytaufik47@gmail.com'">Hire me!</button>
-          <button onclick="location.href = './projects/index.html'" id="rangka">Projects</button>
+          <button onclick="location.href = './../src/projects/index.html'" id="rangka">Projects</button>
   </div>
   <div class="card">
         <img :src="taufik" alt="profile taufik">

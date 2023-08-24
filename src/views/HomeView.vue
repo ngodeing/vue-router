@@ -1,5 +1,6 @@
 <template>
-  <div class="title">
+  <div class="containerh">
+    <div class="title">
           <h1 id="name">Hi I'm Taufik</h1>
           <h1 id="job">Front End<br>Developer</h1>
           <button onclick="location.href = 'mailto:onlytaufik47@gmail.com'">Hire me!</button>
@@ -11,6 +12,7 @@
         <div class="clear"></div>
         <p>I am an experienced front-end developer with skills in HTML, CSS, and JavaScript. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.<br><br>I have expertise in developing websites using frameworks such as VueJS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
     </div>
+  </div>
 </template>
 
 <script>
@@ -24,11 +26,17 @@ export default {
 }
 </script>
 <style>
-
+.containerh{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
 .title{
     float: left;
     width: 450px;
-    margin: 100px 0px 0px 100px;
+    margin: 20px 0px 0px 100px;
     font-family: poppins;
 }
 .title h1{
@@ -65,13 +73,13 @@ export default {
 /* CARD */
 .card{
     background-color: #112B3C;
-    width: 40%;
+    width: 500px;
     border-radius: 20px;
     font-size: 90%;
     color: #EFEFEF;
     float: right;
     padding: 30px;
-    margin: 50px 20px 0px 0px;
+    margin: 20px 20px 0px 0px;
 }
 .card img{
     float: left;
@@ -90,6 +98,9 @@ export default {
 }
 
 @media only screen and (max-width: 1100px)  {
+  .containerh{
+    display: inline-block;
+  }
   .title{
     float: none;
     width: 80%;

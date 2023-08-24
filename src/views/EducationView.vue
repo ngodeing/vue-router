@@ -53,10 +53,10 @@ export default {
     color: #112B3C;
 }
 .containerEdu h1{
-    text-align: left;
+    text-align: center;
     font-size: 50pt;
     color: #112B3C;
-    margin: 30px 0px 30px 30px;
+    margin: 30px 0px 50px 30px;
     transition: 0.5s;
 }
 .cardEdu{

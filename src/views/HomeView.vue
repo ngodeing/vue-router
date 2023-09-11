@@ -105,9 +105,12 @@ export default {
 }
 
 @media only screen and (max-width: 1100px)  {
-  .containerh{
-    flex-direction: column;
+  .card{
+    width: 80%;
   }
+}
+
+@media only screen and (max-width: 768px)  {
   .line{
     width: 75%;
   }

@@ -78,7 +78,7 @@ nav a.router-link-exact-active {
     display: none;
   }
   nav a{
-    margin: 0px;
+    margin: 10px;
     padding: 15px;
     font-size: 8pt;
   }

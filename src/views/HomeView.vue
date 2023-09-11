@@ -105,6 +105,12 @@ export default {
 }
 
 @media only screen and (max-width: 1100px)  {
+  .containerh{
+    flex-direction: column;
+  }
+  .line{
+    width: 75%;
+  }
   .title{
     margin: 50px auto;
   }
@@ -131,7 +137,7 @@ export default {
     font-size: 10pt;
   }
   #profile {
-    margin-top: -50px;
+    margin-top: -100px;
     width: 250px;
   }
   .card h1{

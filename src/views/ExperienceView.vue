@@ -46,13 +46,13 @@
     width: 95%;
     margin: 0px auto;
     transition: 0.5s;
-    color: #112B3C;
+    color: rgb(50, 50, 50);
 }
 .containerExp h1{
     text-align: center;
-    font-size: 50pt;
-    color: #112B3C;
-    margin: 30px 0px 50px 30px;
+    font-size: 40pt;
+    color: rgb(50, 50, 50);
+    margin: 50px 0px 80px 30px;
     transition: 0.5s;
 }
 .cardExp{
@@ -72,7 +72,7 @@
     margin: 0px 20px 0px 0px;
 }
 .cardExp h2{
-    color: #F66B0E;
+    color: #ce1616;
     margin-bottom: -5px;
 }
 .cardExp p {

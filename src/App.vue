@@ -1,6 +1,5 @@
 <template>
   <nav>
-    <img :src="logo" alt="logo website">
     <router-link to="/">Home</router-link>
     <router-link to="/skill">Skill</router-link>
     <router-link to="/education">Education</router-link>
@@ -48,8 +47,9 @@ nav img {
 }
 
 nav {
-  padding: 30px;
-  margin-top: -15px;
+  padding: 19px;
+  margin: -10px;
+  margin-bottom: 50px;
 }
 
 nav a {
@@ -61,7 +61,10 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  border-bottom: solid #001253;
+  background-color: #ce1616;
+  color: #ffffff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 @media only screen and (max-width: 768px) {

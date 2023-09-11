@@ -6,17 +6,18 @@
           <button onclick="location.href = 'mailto:onlytaufik47@gmail.com'">Hire me!</button>
           <button onclick="window.location.href = 'https://projects.taufiknurrohman.my.id'" id="rangka">Projects</button>
   </div>
-  <div class="card">
-        <img :src="taufik" alt="profile taufik">
-        <h1>Taufik Nurrohman</h1>
-        <div class="clear"></div>
-        <p>I am an experienced front-end developer with skills in HTML, CSS, and JavaScript. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.<br><br>I have expertise in developing websites using frameworks such as VueJS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
-    </div>
+  <img :src="taufik" alt="profile taufik" id="profile">
   </div>
+  <div class="line"></div>
+  <div class="card">
+        <h1>About Me</h1>
+        <div class="clear"></div>
+        <p>I am an experienced front-end developer with skills in HTML, CSS, and JavaScript. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.I have expertise in developing websites using frameworks such as VueJS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
+    </div>
 </template>
 
 <script>
-import taufik1 from './../assets/taufiktrnsprn.png';
+import taufik1 from './../assets/taufikprofile.jpg';
 export default {
   data(){
     return{
@@ -26,9 +27,17 @@ export default {
 }
 </script>
 <style>
+.line{
+  background-color: rgb(50, 50, 50);
+  width: 1000px;
+  height: 1px;
+  margin: 100px auto 20px auto;
+}
 .containerh{
   display: flex;
+  background-color: #EFEFEF;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 150px;
@@ -36,7 +45,7 @@ export default {
 .title{
     float: left;
     width: 450px;
-    margin: 20px 0px 0px 100px;
+    margin: 20px 0px 0px 0px;
     font-family: poppins;
 }
 .title h1{
@@ -46,17 +55,17 @@ export default {
     line-height: 1.2;
 }
 #name{
-    color: #112B3C;
+    color: rgb(50, 50, 50);
 }
 #job{
-    color: #F66B0E;
+    color: rgb(50, 50, 50);
     margin-top: -40px;
 }
 .title button{
     float: left;
     cursor: pointer;
     border-style: none;
-    background-color: #112B3C;
+    background-color: #ce1616;
     border-radius: 3px;
     color: #EFEFEF;
     font-size: 15pt;
@@ -66,60 +75,50 @@ export default {
 }
 #rangka{
     border-style: solid;
-    border-color: #112B3C;
+    border-color: #ce1616;
     background-color: transparent;
-    color: #F66B0E;
+    color: #ce1616;
 }
 /* CARD */
 .card{
-    background-color: #112B3C;
-    width: 500px;
+    width: 1000px;
     border-radius: 20px;
     font-size: 90%;
-    color: #EFEFEF;
-    float: right;
+    color: rgb(50, 50, 50);
     padding: 30px;
-    margin: 20px 20px 0px 0px;
+    margin: 0px auto;
 }
-.card img{
-    float: left;
-    background-color: #205375;
-    width: 150px;
+#profile {
+    margin-top: 50px;
+    width: 350px;
     border-radius: 50%;
 }
 .card h1 {
     font-size: 20pt;
-    margin: 55px 0px 0px 30px;
-    float: left;
+    margin: 20px 0px 0px 30px;
 }
 .card p{
     margin: 30px 0px 0px 0px;
     text-align: justify;
+    padding: 20px;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 1100px)  {
-  .containerh{
-    display: inline-block;
-  }
   .title{
-    float: none;
-    width: 80%;
     margin: 50px auto;
-    transition: 0.5s;
-    
   }
   .title h1{
-    text-align: center;
     font-size: 35pt;
-  }
-  #name{
-    margin-bottom: 40px;
+    text-align: center;
   }
   .title button{
     float: none;
-    margin: 0px auto;
-    padding: 8px 20px;
+    margin: 20px auto 0px auto;
     font-size: 10pt;
+  }
+  #name{
+    margin-bottom: 40px;
   }
   #rangka{
     margin-left: 20px;
@@ -131,9 +130,9 @@ export default {
     transition: 0.5s;
     font-size: 10pt;
   }
-  .card img{
-    float: none;
-    width: 120px;
+  #profile {
+    margin-top: -50px;
+    width: 250px;
   }
   .card h1{
     float: none;

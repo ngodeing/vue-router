@@ -123,8 +123,8 @@ export default {
 </script>
 <style>
 .container{
-    background-color: #112B3C;
     width: 95%;
+    
     height: auto;
     border-radius: 20px;
     margin: 30px auto;
@@ -137,7 +137,7 @@ export default {
     width: 600px;
     display: inline-block;
     margin: 0px 0px 20px 20px;
-    color: #EFEFEF;
+    color: rgb(50, 50, 50);
 }
 .cards1 img {
     margin-right: 100px;
@@ -147,7 +147,7 @@ export default {
 }
 
 .cards1 h2{
-    color: #EFEFEF;
+    color: rgb(50, 50, 50);
 }
 .cards1 .text{
     float: right;

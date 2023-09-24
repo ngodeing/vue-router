@@ -72,7 +72,9 @@ nav a.router-link-exact-active {
 
 @media (min-width: 300px) and (max-width: 1000px) {
   nav{
-    margin: -10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    gap: 10px;
   }
   /* nav img{
     width: 40px;
@@ -80,8 +82,8 @@ nav a.router-link-exact-active {
     display: none;
   } */
   nav a{
-    margin: 10px;
     padding: 15px;
+    margin: 0px;
     font-size: 8pt;
   }
 }

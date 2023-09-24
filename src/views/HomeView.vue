@@ -228,6 +228,12 @@ p{
     transition: 0.5s;
     font-size: 10pt;
   }
+  .card3-in h1{
+    margin-left: 0px;
+  }
+  .card2-in h1{
+    margin-left: 0px;
+  }
 
   #profile {
     margin-top: -100px;
@@ -257,7 +263,13 @@ p{
 }
 @media (max-width: 299px){
   .prime-container{
-    width: 75%;
+    width: 90%;
+  }
+  .card3-in h1{
+    margin-left: 0px;
+  }
+  .card2-in h1{
+    margin-left: 0px;
   }
   p{
     margin: 0px;
@@ -296,7 +308,7 @@ p{
   .card2{
     flex-wrap: wrap;
     padding: 0px;
-    width: 100%;
+    width: 90%;
     margin: 50px auto;
     transition: 0.5s;
     font-size: 10pt;
@@ -304,7 +316,7 @@ p{
   .card3{
     flex-wrap: wrap-reverse;
     padding: 0px;
-    width: 100%;
+    width: 90%;
     margin: 100px auto;
     transition: 0.5s;
     font-size: 10pt;

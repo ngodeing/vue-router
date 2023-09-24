@@ -72,8 +72,7 @@ nav a.router-link-exact-active {
 
 @media (min-width: 300px) and (max-width: 1000px) {
   nav{
-    margin-top: -10px;
-    margin-bottom: -10px;
+    margin-bottom: -20px;
     gap: 10px;
   }
   /* nav img{

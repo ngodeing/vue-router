@@ -13,7 +13,7 @@
   <div class="card">
         <h1>About Me</h1>
         <div class="clear"></div>
-        <p>I am an experienced front-end developer with skills in HTML, CSS, and JavaScript. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.I have expertise in developing websites using frameworks such as Vue JS and React JS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
+        <p>Hi my name is Taufik Nurrohman, I am an experienced front-end developer with skills in HTML, CSS, and JavaScript Frameworks. I have built a variety of projects, from simple websites to complex web applications. I also understand responsive design and ensure that websites look consistent across different devices and screen sizes.I have expertise in developing websites using frameworks such as Vue JS and React JS. I am passionate about these technologies because they can help enhance the user experience and make websites more interactive and responsive. I also ensure that my code is always clean, readable, and maintainable.</p>
     </div>
     <div class="line"></div>
     <div class="card2">

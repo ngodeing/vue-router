@@ -160,12 +160,13 @@ export default {
 
 @media only screen and (max-width: 1000px) {
     .container{
-        width: 95%;
+        width: 100%;
         margin: 50px auto;
-        padding: 20px 0px;
+        padding: 0px 0px;
     }
     .cards1 {
         width: 100%;
+        margin-left: 0px;
         display: flex;
     }
     .cards1 p{
@@ -175,10 +176,12 @@ export default {
         margin-left: 20px;
     }
     .cards1 .text{
-        width: 50%;
+        width: 65%;
+        margin-left: -15px;
     }
     .cards1 img{
-    width: 20%;
+    width: 25%;
+    margin-left: 35px;
     height: min-content;
     }
 }

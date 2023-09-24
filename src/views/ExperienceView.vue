@@ -58,7 +58,7 @@
 .cardExp{
     width: 500px;
     text-align: left;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 80px 30px;
     display: inline-block;
 }
 .cardExp .text{
@@ -74,6 +74,7 @@
 .cardExp h2{
     color: #ce1616;
     margin-bottom: -5px;
+    margin-left: 50px;
 }
 .cardExp p {
     font-size: 10pt;
@@ -89,7 +90,7 @@
     }
     .containerExp h1{
         text-align: center;
-        font-size: 40pt;
+        font-size: 30pt;
         margin: 50px auto;
     }
     .cardExp .text{
@@ -99,8 +100,29 @@
         margin: 20px 0px 0px 0px;
         width: 90%;
     }
+    .cardExp h2{
+        margin-left: 20px;
+    }
     .cardExp img{
         margin-top: 35px;
+    }
+}
+@media (max-width: 299px){
+    .cardExp{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+    }
+    .cardExp img{
+        margin: 20px auto;
+    }
+    .cardExp .text{
+        width: 100%;
+    }
+    .cardExp h2{
+        text-align: center;
+        width: 85%;
     }
 }
     </style>

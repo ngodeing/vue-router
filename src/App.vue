@@ -27,6 +27,8 @@ body {
     background-color: #EFEFEF;
     color: #EFEFEF;
     font-family: poppins;
+    padding: 0px;
+    margin: 0px;
 }
 #app {
   font-family: poppins, Helvetica, Arial, sans-serif;
@@ -36,19 +38,20 @@ body {
   color: #2c3e50;
   background-color: #EFEFEF;
 }
-nav img {
+/* nav img {
   float: left;
   width: 50px;
-  /* background-color: blue; */
+  background-color: blue; 
   margin: -15px 0px 0px -30px;
-}
+} */
+
 .clear{
   clear: both;
 }
 
 nav {
-  padding: 19px;
-  margin: -10px;
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -67,20 +70,36 @@ nav a.router-link-exact-active {
   border-bottom-right-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 1000px) {
   nav{
-    margin: -25px auto;
-    
+    margin: -10px;
   }
-  nav img{
+  /* nav img{
     width: 40px;
     margin-top: -10px;
     display: none;
-  }
+  } */
   nav a{
     margin: 10px;
     padding: 15px;
     font-size: 8pt;
+  }
+}
+
+@media (max-width: 299px){
+  nav{
+    margin: -10px 0px 0px 0px;
+    
+  }
+  /* nav img{
+    width: 40px;
+    margin-top: -10px;
+    display: none;
+  } */
+  nav a{
+    margin: 3px;
+    padding: 15px;
+    font-size: 6pt;
   }
 }
 </style>

@@ -124,7 +124,6 @@ export default {
 <style>
 .container{
     width: 95%;
-    
     height: auto;
     border-radius: 20px;
     margin: 30px auto;
@@ -136,7 +135,7 @@ export default {
     text-align: left;
     width: 600px;
     display: inline-block;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 80px 20px;
     color: rgb(50, 50, 50);
 }
 .cards1 img {
@@ -148,6 +147,7 @@ export default {
 
 .cards1 h2{
     color: rgb(50, 50, 50);
+    margin-left: 50px;
 }
 .cards1 .text{
     float: right;
@@ -158,24 +158,49 @@ export default {
     clear: both;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .container{
         width: 95%;
         margin: 50px auto;
+        padding: 20px 0px;
     }
     .cards1 {
         width: 100%;
+        display: flex;
     }
     .cards1 p{
         font-size: 10pt;
-        width: 90%;
+    }
+    .cards1 h2{
+        margin-left: 20px;
     }
     .cards1 .text{
         width: 50%;
-        margin-right: 25px;
     }
     .cards1 img{
-    width: 100px;
+    width: 20%;
+    height: min-content;
+    }
+}
+@media (max-width: 299px){
+    .cards1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .cards1 .text{
+        width: 100%;
+    }
+    .cards1 h2{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .cards1 img{
+    width: 20%;
+    margin: 0px auto;
+    height: min-content;
     }
 }
 </style>

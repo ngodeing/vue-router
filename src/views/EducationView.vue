@@ -62,7 +62,7 @@ export default {
 .cardEdu{
     width: 500px;
     text-align: left;
-    margin: 0px 30px 0px 30px;
+    margin: 0px 30px 80px 30px;
     display: inline-block;
 }
 .cardEdu .text{
@@ -78,6 +78,7 @@ export default {
 .cardEdu h2{
     color: #ce1616;
     margin-bottom: -5px;
+    margin-left: 50px;
 }
 .cardEdu p {
     font-size: 10pt;
@@ -93,7 +94,7 @@ export default {
     }
     .containerEdu h1{
         text-align: center;
-        font-size: 40pt;
+        font-size: 30pt;
         margin: 50px auto;
     }
     .cardEdu .text{
@@ -103,8 +104,29 @@ export default {
         margin: 20px 0px 0px 0px;
         width: 90%;
     }
+    .cardEdu h2{
+        margin-left: 20px;
+    }
     .cardEdu img{
         margin-top: 35px;
+    }
+}
+@media (max-width: 299px){
+    .cardEdu{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+    }
+    .cardEdu img{
+        margin: 20px auto;
+    }
+    .cardEdu .text{
+        width: 100%;
+    }
+    .cardEdu h2{
+        text-align: center;
+        width: 85%;
     }
 }
 </style>

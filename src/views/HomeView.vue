@@ -201,7 +201,7 @@ p{
     margin-bottom: 40px;
   }
   #rangka{
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .card{
     display: flex;

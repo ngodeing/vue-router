@@ -85,7 +85,7 @@
 
 @media only screen and (max-width: 768px) {
     .containerExp {
-        width: 90%;
+        width: 100%;
         font-size: 80%;
         margin-top: 100px;
     }
@@ -96,6 +96,7 @@
     }
     .cardExp .text{
         width: 70%;
+        margin-left: 0px;
     }
     .cardExp {
         margin: 20px 0px 0px 0px;
@@ -106,6 +107,8 @@
     }
     .cardExp img{
         margin-top: 35px;
+        width: 20%;
+        margin-left: 10px;
     }
 }
 @media (max-width: 299px){

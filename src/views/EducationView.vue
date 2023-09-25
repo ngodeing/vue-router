@@ -89,7 +89,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
     .containerEdu {
-        width: 90%;
+        width: 100%;
         font-size: 80%;
         margin-top: 100px;
     }
@@ -100,6 +100,7 @@ export default {
     }
     .cardEdu .text{
         width: 70%;
+        margin-left: 0px;
     }
     .cardEdu {
         margin: 20px 0px 0px 0px;
@@ -110,6 +111,8 @@ export default {
     }
     .cardEdu img{
         margin-top: 35px;
+        margin-left: 10px;
+        width: 20%;
     }
 }
 @media (max-width: 299px){

@@ -5,7 +5,6 @@
     <router-link to="/education">Education</router-link>
     <router-link to="/experience">Experience</router-link>
   </nav>
-  <div class="clear"></div>
   <router-view/>
 </template>
 <script>
@@ -45,62 +44,74 @@ body {
   margin: -15px 0px 0px -30px;
 } */
 
-.clear{
-  clear: both;
-}
 
 nav {
   display: flex;
+  top: 0px;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  gap: 25px;
   justify-content: center;
-  margin-bottom: 50px;
+  padding: 15px;
+  background-color: #EFEFEF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
 }
 
 nav a {
   font-weight: bold;
+  border-radius: 30px;
   color: #282828;
-  margin-right: 30px;
-  padding: 20px;
+  padding: 10px 30px;
   text-decoration: none;
+  position: relative;
+  transition: transform 0.3s ease; 
+}
+nav a:hover {
+  background-color: #ffffff7b;
 }
 
 nav a.router-link-exact-active {
   background-color: #ce1616;
   color: #ffffff;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  transform: translateY(-5px);
 }
 
 @media (min-width: 300px) and (max-width: 1000px) {
   nav{
-    margin-bottom: -20px;
-    gap: 10px;
+    gap: 5px;
+    padding: 10px 2px;
   }
+  nav a.router-link-exact-active {
+  transform: translateY(-3px);
+}
   /* nav img{
     width: 40px;
     margin-top: -10px;
     display: none;
   } */
   nav a{
-    padding: 15px;
-    margin: 0px;
+    padding: 10px 25px;
     font-size: 8pt;
   }
 }
 
 @media (max-width: 299px){
   nav{
-    margin: -10px 0px 0px 0px;
-    
+    gap: 1px;
+    padding: 8px 5px;
   }
+  nav a.router-link-exact-active {
+  transform: translateY(-3px);
+}
   /* nav img{
     width: 40px;
     margin-top: -10px;
     display: none;
   } */
   nav a{
-    margin: 3px;
-    padding: 15px;
-    font-size: 6pt;
+    padding: 8px 15px;
+    font-size: 8pt;
   }
 }
 </style>

@@ -52,7 +52,7 @@
     text-align: center;
     font-size: 40pt;
     color: rgb(50, 50, 50);
-    margin: 50px 0px 80px 30px;
+    margin: 120px 0px 80px 30px;
     transition: 0.5s;
 }
 .cardExp{
@@ -87,6 +87,7 @@
     .containerExp {
         width: 90%;
         font-size: 80%;
+        margin-top: 100px;
     }
     .containerExp h1{
         text-align: center;
@@ -94,7 +95,7 @@
         margin: 50px auto;
     }
     .cardExp .text{
-        width: 60%;
+        width: 70%;
     }
     .cardExp {
         margin: 20px 0px 0px 0px;

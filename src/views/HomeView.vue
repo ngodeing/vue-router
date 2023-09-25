@@ -21,7 +21,7 @@
       <div class="card2-in">
         <h1>Always Learn New Things</h1>
           <div class="clear"></div>
-          <p id="pg2">In this rapidly evolving world, technology, especially in the realm of programming, is in a constant state of flux. As software developers, it's not just a professional obligation but a fundamental necessity for us to be perpetual learners. What's considered cutting-edge today can easily become outdated tomorrow. Therefore, it's crucial that we, as developers, never cease our pursuit of acquiring new knowledge and skills. The dynamic nature of the tech industry demands nothing less. 
+          <p id="pg2">In this digital world, technology especially in the field of programming, has grown rapidly. As software developers, it's not just a professional obligation but a fundamental necessity for us to be perpetual learners. What's considered cutting-edge today can easily become outdated tomorrow. Therefore, it's crucial that we, as developers, never cease our pursuit of acquiring new knowledge and skills. The dynamic nature of the tech industry demands nothing less. 
           <br><br>
           Each day brings forth fresh tools, frameworks, and methodologies, presenting us with opportunities to expand our expertise. Embracing the excitement of exploring the latest trends and technologies in web development, I firmly believe that continuous learning isn't merely a choice but a cornerstone of success in our field. I am committed to staying inquisitive and adaptable, ensuring that I remain at the forefront of this ever-shifting technological landscape."</p>
           </div>
@@ -56,7 +56,7 @@ export default {
 <style>
 .prime-container{
   width: 1000px;
-  margin: 0px auto;
+  margin: 100px auto;
 }
 .line{
   background-color: rgb(50, 50, 50);
@@ -97,11 +97,11 @@ export default {
     cursor: pointer;
     border-style: none;
     background-color: #ce1616;
-    border-radius: 3px;
+    border-radius: 30px;
     color: #EFEFEF;
     font-size: 15pt;
     margin: 5px 20px 0px 0px;
-    padding: 10px 30px;
+    padding: 15px 30px;
     font-family: poppins;
 }
 #rangka{
@@ -177,6 +177,7 @@ p{
 @media (min-width: 300px) and (max-width: 1000px)  {
   .prime-container{
     width: 75%;
+    margin-top: 50px;
   }
   p{
     margin: 0px;
@@ -264,6 +265,7 @@ p{
 @media (max-width: 299px){
   .prime-container{
     width: 90%;
+    margin-top: 50px;
   }
   .card3-in h1{
     margin-left: 0px;

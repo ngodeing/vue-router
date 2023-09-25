@@ -126,7 +126,7 @@ export default {
     width: 95%;
     height: auto;
     border-radius: 20px;
-    margin: 30px auto;
+    margin: 100px auto;
     padding: 20px 0px;
     transition: 0.5s;
 }
@@ -161,7 +161,7 @@ export default {
 @media only screen and (max-width: 1000px) {
     .container{
         width: 100%;
-        margin: 50px auto;
+        margin: 100px auto;
         padding: 0px 0px;
     }
     .cards1 {
@@ -195,6 +195,7 @@ export default {
     }
     .cards1 .text{
         width: 100%;
+        margin: 0px;
     }
     .cards1 h2{
         text-align: center;

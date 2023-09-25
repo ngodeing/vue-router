@@ -56,7 +56,7 @@ export default {
     text-align: center;
     font-size: 40pt;
     color: rgb(50, 50, 50);
-    margin: 50px 0px 80px 30px;
+    margin: 120px 0px 80px 30px;
     transition: 0.5s;
 }
 .cardEdu{
@@ -91,6 +91,7 @@ export default {
     .containerEdu {
         width: 90%;
         font-size: 80%;
+        margin-top: 100px;
     }
     .containerEdu h1{
         text-align: center;
@@ -98,7 +99,7 @@ export default {
         margin: 50px auto;
     }
     .cardEdu .text{
-        width: 60%;
+        width: 70%;
     }
     .cardEdu {
         margin: 20px 0px 0px 0px;

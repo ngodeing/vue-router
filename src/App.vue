@@ -6,13 +6,28 @@
     <router-link to="/experience">Experience</router-link>
   </nav>
   <router-view/>
+  <footer>
+    <h3>Follow Me in Social Media</h3>
+    <div class="images">
+      <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg"></a>
+      <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg"></a>
+      <a href="http://linkedin.com/in/taufiknurrr"><img :src="linkedin" alt="logo linkedin" class="appimg"></a>
+    </div>
+      <a href="mailto:onlytaufik47@gmail.com">Or Contact Me On Email : onlytaufik47@gmail.com</a>
+  </footer>
 </template>
 <script>
-import logo1 from './assets/iconTransparan.png'; 
+import logo1 from './assets/iconTransparan.png';
+import ig from './assets/instagram.png';
+import githublogo from './assets/github.png';
+import linkedinlogo from './assets/linkedin.png';
 export default {
   data(){
     return{
-      logo: logo1
+      logo: logo1,
+      instagram: ig,
+      github: githublogo,
+      linkedin: linkedinlogo
     };
   }
 }
@@ -28,6 +43,15 @@ body {
     font-family: poppins;
     padding: 0px;
     margin: 0px;
+}
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.appimg{
+  width: 50px;
 }
 #app {
   font-family: poppins, Helvetica, Arial, sans-serif;
@@ -68,7 +92,7 @@ nav a {
   transition: transform 0.3s ease; 
 }
 nav a:hover {
-  background-color: #ffffff7b;
+  background-color: #7b7b7b7b;
 }
 
 nav a.router-link-exact-active {
@@ -76,11 +100,23 @@ nav a.router-link-exact-active {
   color: #ffffff;
   transform: translateY(-5px);
 }
+footer{
+  background-color: #ce1616;
+  color: #EFEFEF;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  margin-bottom: -20px;
+}
+footer a{
+  color: #EFEFEF;
+  text-decoration: none;
+}
 
 @media (min-width: 300px) and (max-width: 1000px) {
   nav{
-    gap: 5px;
-    padding: 10px 2px;
+    gap: 0px;
+    padding: 10px 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);
@@ -94,12 +130,18 @@ nav a.router-link-exact-active {
     padding: 10px 25px;
     font-size: 8pt;
   }
+  .appimg{
+    width: 25px;
+  }
+  footer {
+    font-size: 8pt;
+  }
 }
 
 @media (max-width: 299px){
   nav{
-    gap: 1px;
-    padding: 8px 5px;
+    gap: 0px;
+    padding: 7px 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);
@@ -111,7 +153,15 @@ nav a.router-link-exact-active {
   } */
   nav a{
     padding: 8px 15px;
+    font-size: 7pt;
+  }
+  .appimg{
+    width: 25px;
+  }
+  footer {
+    width: fit-content;
     font-size: 8pt;
+    padding: 20px;
   }
 }
 </style>

@@ -21,18 +21,18 @@
       <div class="card2-in">
         <h1>Always Learn New Things</h1>
           <div class="clear"></div>
-          <p id="pg2">In this digital world, technology especially in the field of programming, has grown rapidly. As software developers, it's not just a professional obligation but a fundamental necessity for us to be perpetual learners. What's considered cutting-edge today can easily become outdated tomorrow. Therefore, it's crucial that we, as developers, never cease our pursuit of acquiring new knowledge and skills. The dynamic nature of the tech industry demands nothing less. 
+          <p id="pg2">In this digital world, technology especially in the field of programming, has grown quickly. As software developers, it's not just a professional obligation but a fundamental necessity for us to be good learners. What's considered cutting-edge today can easily become outdated tomorrow. Therefore, it's crucial that we, as developers, never cease our pursuit of acquiring new knowledge and skills. The dynamic of the tech industry demands nothing less. 
           <br><br>
-          Each day brings forth fresh tools, frameworks, and methodologies, presenting us with opportunities to expand our expertise. Embracing the excitement of exploring the latest trends and technologies in web development, I firmly believe that continuous learning isn't merely a choice but a cornerstone of success in our field. I am committed to staying inquisitive and adaptable, ensuring that I remain at the forefront of this ever-shifting technological landscape."</p>
+          Each day brings new tools, frameworks, and methodologies, presenting us with opportunities to expand our expertise. Embracing the excitement of exploring the latest trends and technologies in web development, I firmly believe that continuous learning isn't merely a choice but a cornerstone of success in our field. I am committed to staying inquisitive and adaptable, ensuring that I remain at the forefront of this ever-shifting technological landscape."</p>
           </div>
     </div>
     <div class="card3">
       <div class="card3-in">
         <h1>Study and Grow Together</h1>
           <div class="clear"></div>
-          <p id="pg2">I firmly believe that learning and the exchange of knowledge are at the core of professional growth and the tech industry as a whole. The world of technology is ever-changing, and we cannot thrive unless we actively seek to learn continuously. Yet, learning isn't just about textbooks or online courses. It's also about sharing knowledge with our peers. Often, we gain valuable insights from the experiences and perspectives of others. Hence, beyond being diligent learners, we must also be attentive listeners, always ready to learn from one another.
+          <p id="pg2">I believe that learning and explore a new knowledge is core of professional growth. The world of technology is ever-changing, and we cannot stop it, we actively seek to learn continuously. Yet, learning isn't just about textbooks or online courses. It's also about sharing knowledge with our friends. Often, we gain valuable insights from the experiences and perspectives of others. We must also be attentive listeners, always ready to learn from one another.
           <br><br>
-          However, learning isn't only about acquiring knowledge, it's also about giving back. As developers, we bear a responsibility to help our community grow and thrive. Sharing our knowledge with others not only reinforces our own understanding but also allows us to play an active role in helping others succeed in the world of technology. The process of learning and teaching is a continuous cycle, and strong developer communities are built on a foundation of mutual appreciation for shared knowledge.</p>
+          However, learning isn't only about acquiring knowledge, it's also about giving back. As developers, we have a responsibility to help our community to grow and thrive. Sharing our knowledge with others not only reinforces our own understanding but also allows us to play an active role in helping others succeed in the world of technology. The process of learning and teaching is a continuous cycle, and strong developer communities are built on a foundation of mutual appreciation for shared knowledge.</p>
           </div>
           <img :src="profile3" alt="profile taufik" id="profile2">
     </div>
@@ -100,7 +100,7 @@ export default {
     border-radius: 30px;
     color: #EFEFEF;
     font-size: 15pt;
-    margin: 5px 20px 0px 0px;
+    margin: 5px 15px 0px 0px;
     padding: 15px 30px;
     font-family: poppins;
 }
@@ -177,7 +177,7 @@ p{
 @media (min-width: 300px) and (max-width: 1000px)  {
   .prime-container{
     width: 75%;
-    margin-top: 50px;
+    margin: 50px auto;
   }
   p{
     margin: 0px;
@@ -275,12 +275,13 @@ p{
   }
   p{
     margin: 0px;
+    font-size: 8pt;
   }
   .line{
     width: 100%;
   }
   .title{
-    margin: 50px auto;
+    margin: 20px auto;
   }
   .title h1{
     font-size: 25pt;
@@ -289,13 +290,14 @@ p{
   .title button{
     float: none;
     margin: 15px auto 0px auto;
-    font-size: 5pt;
+    padding: 10px 20px;
+    font-size: 8pt;
   }
   #name{
     margin-bottom: 40px;
   }
   #rangka{
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .card{
     display: flex;

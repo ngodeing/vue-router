@@ -45,6 +45,7 @@
 .containerExp{
     width: 95%;
     margin: 0px auto;
+    margin-bottom: 100px;
     transition: 0.5s;
     color: rgb(50, 50, 50);
 }

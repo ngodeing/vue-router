@@ -1,10 +1,13 @@
 <template>
-  <nav>
+  <header>
+    <img :src="logo" alt="logo website" class="logoweb">
+    <nav>
     <router-link to="/">Home</router-link>
     <router-link to="/skill">Skill</router-link>
     <router-link to="/education">Education</router-link>
     <router-link to="/experience">Experience</router-link>
   </nav>
+  </header>
   <router-view/>
   <footer>
     <h3>Follow Me in Social Media</h3>
@@ -17,7 +20,7 @@
   </footer>
 </template>
 <script>
-import logo1 from './assets/iconTransparan.png';
+import logo1 from './assets/TN_HD.png';
 import ig from './assets/instagram.png';
 import githublogo from './assets/github.png';
 import linkedinlogo from './assets/linkedin.png';
@@ -43,6 +46,19 @@ body {
     font-family: poppins;
     padding: 0px;
     margin: 0px;
+}
+header{
+  top: 0px;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  padding: 15px;
+  background-color: #EFEFEF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
+}
+.logoweb{
+  float: left;
+  width: 40px;
 }
 .images{
   display: flex;
@@ -71,15 +87,8 @@ body {
 
 nav {
   display: flex;
-  top: 0px;
-  z-index: 2;
-  position: fixed;
-  width: 100%;
-  gap: 25px;
   justify-content: center;
-  padding: 15px;
-  background-color: #EFEFEF;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.192);
+  gap: 25px;
 }
 
 nav a {
@@ -114,9 +123,14 @@ footer a{
 }
 
 @media (min-width: 300px) and (max-width: 1000px) {
+  .logoweb{
+  display: none;
+}
+  header{
+    padding: 10px 0px;
+  }
   nav{
     gap: 0px;
-    padding: 10px 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);
@@ -139,9 +153,14 @@ footer a{
 }
 
 @media (max-width: 299px){
+  .logoweb{
+  display: none;
+}
+header{
+    padding: 10px 0px;
+  }
   nav{
     gap: 0px;
-    padding: 7px 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);

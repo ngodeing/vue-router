@@ -132,6 +132,7 @@ footer a{
   }
   nav{
     gap: 0px;
+    margin-right: 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);
@@ -162,6 +163,7 @@ header{
   }
   nav{
     gap: 0px;
+    margin-right: 0px;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);

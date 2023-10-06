@@ -88,6 +88,7 @@ header{
 nav {
   display: flex;
   justify-content: center;
+  margin-right: 40px;
   gap: 25px;
 }
 

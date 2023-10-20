@@ -12,9 +12,9 @@
   <footer>
     <h3>Follow Me in Social Media</h3>
     <div class="images">
-      <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg"></a>
-      <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg"></a>
-      <a href="http://linkedin.com/in/taufiknurrr"><img :src="linkedin" alt="logo linkedin" class="appimg"></a>
+      <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg">Instagram</a>
+      <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg">Github</a>
+      <a href="http://linkedin.com/in/taufiknurrr"><img :src="linkedin" alt="logo linkedin" class="appimg">LinkedIn</a>
     </div>
       <a href="mailto:onlytaufik47@gmail.com">Or Contact Me On Email : onlytaufik47@gmail.com</a>
   </footer>
@@ -67,7 +67,7 @@ header{
   margin-bottom: 10px;
 }
 .appimg{
-  width: 50px;
+  width: 35px;
 }
 #app {
   font-family: poppins, Helvetica, Arial, sans-serif;
@@ -121,6 +121,11 @@ footer{
 footer a{
   color: #EFEFEF;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 @media (min-width: 300px) and (max-width: 1000px) {
@@ -147,11 +152,15 @@ footer a{
     font-size: 8pt;
   }
   .appimg{
-    width: 25px;
+    width: 20px;
   }
   footer {
     font-size: 8pt;
   }
+  footer a{
+  gap: 8px;
+  margin-top: 5px;
+}
 }
 
 @media (max-width: 299px){
@@ -178,12 +187,16 @@ header{
     font-size: 7pt;
   }
   .appimg{
-    width: 25px;
+    width: 20px;
   }
   footer {
     width: fit-content;
     font-size: 8pt;
     padding: 20px;
   }
+  footer a{
+  gap: 5px;
+  margin-top: 8px;
+}
 }
 </style>

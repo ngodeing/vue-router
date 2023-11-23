@@ -12,9 +12,9 @@
   <footer>
     <h3>Follow Me in Social Media</h3>
     <div class="images">
-      <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg">Instagram</a>
-      <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg">Github</a>
-      <a href="http://linkedin.com/in/taufiknurrr"><img :src="linkedin" alt="logo linkedin" class="appimg">LinkedIn</a>
+      <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg">taufiknrrr</a>
+      <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg">ngodeing</a>
+      <a href="http://linkedin.com/in/taufiknurrr"><img :src="linkedin" alt="logo linkedin" class="appimg">taufiknurrr</a>
     </div>
       <a href="mailto:onlytaufik47@gmail.com">Or Contact Me On Email : onlytaufik47@gmail.com</a>
   </footer>
@@ -116,7 +116,7 @@ footer{
   width: 100%;
   padding-top: 5px;
   padding-bottom: 25px;
-  margin-bottom: -20px;
+  
 }
 footer a{
   color: #EFEFEF;
@@ -148,8 +148,8 @@ footer a{
     display: none;
   } */
   nav a{
-    padding: 10px 25px;
-    font-size: 8pt;
+    padding: 8px 20px;
+    font-size: 6pt;
   }
   .appimg{
     width: 20px;
@@ -171,8 +171,8 @@ header{
     padding: 10px 0px;
   }
   nav{
-    gap: 0px;
-    margin-right: 0px;
+    gap: 5px;
+    margin: 0px auto;
   }
   nav a.router-link-exact-active {
   transform: translateY(-3px);
@@ -183,16 +183,16 @@ header{
     display: none;
   } */
   nav a{
-    padding: 8px 15px;
+    padding: 8px 12px;
     font-size: 7pt;
   }
   .appimg{
     width: 20px;
   }
   footer {
-    width: fit-content;
-    font-size: 8pt;
-    padding: 20px;
+    width: 100%;
+    font-size: 5pt;
+    padding-top: 20px;
   }
   footer a{
   gap: 5px;

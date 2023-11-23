@@ -10,7 +10,7 @@
   </header>
   <router-view/>
   <footer>
-    <h3>Follow Me in Social Media</h3>
+    <h1>Follow Me in Social Media</h1>
     <div class="images">
       <a href="http://instagram.com/taufik_nrrr"><img :src="instagram" alt="logo instagram" class="appimg">taufiknrrr</a>
       <a href="http://github.com/ngodeing"><img :src="github" alt="logo github" class="appimg">ngodeing</a>
@@ -116,6 +116,7 @@ footer{
   width: 100%;
   padding-top: 5px;
   padding-bottom: 25px;
+  font-size: 10pt;
   
 }
 footer a{
@@ -155,7 +156,7 @@ footer a{
     width: 20px;
   }
   footer {
-    font-size: 8pt;
+    font-size: 6pt;
   }
   footer a{
   gap: 8px;

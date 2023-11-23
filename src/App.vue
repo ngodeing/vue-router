@@ -137,7 +137,7 @@ footer a{
     padding: 10px 0px;
   }
   nav{
-    gap: 0px;
+    gap: 3px;
     margin-right: 0px;
   }
   nav a.router-link-exact-active {
@@ -149,8 +149,8 @@ footer a{
     display: none;
   } */
   nav a{
-    padding: 8px 20px;
-    font-size: 6pt;
+    padding: 10px 15px;
+    font-size: 7pt;
   }
   .appimg{
     width: 20px;

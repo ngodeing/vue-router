@@ -195,7 +195,8 @@ p{
   .title button{
     float: none;
     margin: 20px auto 0px auto;
-    font-size: 8pt;
+    font-size: 10pt;
+    padding: 10px 20px;
   }
   #name{
     margin-bottom: 40px;

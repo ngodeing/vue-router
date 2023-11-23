@@ -74,7 +74,7 @@ export default {
     width: 80px;
     float: left;
     border-radius: 10px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 .cardEdu h2{
     color: #ce1616;
@@ -99,14 +99,15 @@ export default {
         font-size: 30pt;
         margin: 50px auto;
     }
-    .cardEdu .text{
-        width: 70%;
-        margin-left: 0px;
-    }
     .cardEdu {
         margin: 20px 0px 0px 0px;
         width: 90%;
     }
+    .cardEdu .text{
+        width: 70%;
+        margin-left: 0px;
+    }
+    
     .cardEdu h2{
         margin-left: 20px;
     }

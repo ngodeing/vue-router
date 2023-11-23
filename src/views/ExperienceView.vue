@@ -64,13 +64,13 @@
 }
 .cardExp .text{
     float: right;
-    width: 80%;
+    width: 70%;
 }
 .cardExp img{
     width: 80px;
     float: left;
     border-radius: 10px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 .cardExp h2{
     color: #ce1616;

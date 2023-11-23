@@ -137,7 +137,7 @@ footer a{
     padding: 10px 0px;
   }
   nav{
-    gap: 3px;
+    gap: 10px;
     margin-right: 0px;
   }
   nav a.router-link-exact-active {
